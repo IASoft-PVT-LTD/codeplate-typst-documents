@@ -1,0 +1,44 @@
+{
+  "$schema": "https://codeplate.io/schema/codeplate-0.json",
+  "spec": 0,
+  "id": "typst-documents",
+  "name": "Typst Invoices & Quotes",
+  "version": "1.1.3",
+  "kind": "document",
+  "summary": "Branded PDF invoices, quotes and credit notes from CSV or JSON, typeset with Typst: exact money math, imports, frozen sent invoices, checks.",
+  "tags": [
+    "typst",
+    "pdf",
+    "invoice",
+    "quote",
+    "csv",
+    "freelancer",
+    "small-business",
+    "documents"
+  ],
+  "stack": [
+    {
+      "name": "typst",
+      "version": "0.15.1"
+    },
+    {
+      "name": "node",
+      "version": "22"
+    }
+  ],
+  "checks": {
+    "command": "npm run check",
+    "requires": [
+      "node",
+      "typst"
+    ],
+    "budget": 30
+  },
+  "license": "CodePlate-Free-1.2",
+  "tier": "free",
+  "media": [
+    "docs/media/invoice.png",
+    "docs/media/quote.png",
+    "docs/media/invoice-page-2.png"
+  ]
+}

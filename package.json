@@ -1,0 +1,23 @@
+{
+  "name": "typst-documents",
+  "version": "1.1.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node src/cli.mjs build",
+    "preview": "node src/cli.mjs preview",
+    "watch": "node src/cli.mjs watch",
+    "list": "node src/cli.mjs list",
+    "next": "node src/cli.mjs next",
+    "issue": "node src/cli.mjs issue",
+    "import": "node src/cli.mjs import",
+    "export": "node src/cli.mjs export",
+    "remove-sample": "node src/cli.mjs remove-sample",
+    "typst": "node src/cli.mjs typst",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "check": "node checks/run.mjs"
+  }
+}

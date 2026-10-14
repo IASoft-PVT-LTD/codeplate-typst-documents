@@ -1,0 +1,233 @@
+{
+  "number": "INV-2026-041",
+  "type": "invoice",
+  "issuedOn": "2026-10-01",
+  "pdf": "INV-2026-041.pdf",
+  "sha256": "d9b1437c798e7da046f0834d6ffce6170df2d0fab11f7507bd2d06488a6fd28f",
+  "source": {
+    "number": "INV-2026-041",
+    "items": [
+      {
+        "description": "Brand identity: discovery workshop",
+        "details": "Half-day workshop with the founders, moodboards and a written brief",
+        "quantity": "1",
+        "unit": "day",
+        "unitPrice": "650.00",
+        "discount": "",
+        "tax": "",
+        "note": "",
+        "source": ""
+      },
+      {
+        "description": "Logo design",
+        "details": "Three concepts, two rounds of revisions, final files in SVG, PNG and PDF",
+        "quantity": "1",
+        "unit": "project",
+        "unitPrice": "1800.00",
+        "discount": "",
+        "tax": "",
+        "note": "",
+        "source": ""
+      },
+      {
+        "description": "Packaging illustration",
+        "details": "Three bag fronts for the seasonal range",
+        "quantity": "3",
+        "unit": "design",
+        "unitPrice": "380.00",
+        "discount": "",
+        "tax": "",
+        "note": "",
+        "source": ""
+      },
+      {
+        "description": "Printed sample run",
+        "details": "Proofs from the printer, passed on at cost",
+        "quantity": "1",
+        "unit": "batch",
+        "unitPrice": "96.40",
+        "discount": "",
+        "tax": "zero",
+        "note": "",
+        "source": ""
+      }
+    ],
+    "type": "invoice",
+    "client": "harbour-finch",
+    "issued": "2026-10-01",
+    "due": "",
+    "reference": "PO 5521",
+    "corrects": "",
+    "notes": "",
+    "currency": ""
+  },
+  "document": {
+    "number": "INV-2026-041",
+    "type": "invoice",
+    "title": "Invoice",
+    "language": "en",
+    "locale": "en-GB",
+    "currency": "GBP",
+    "issued": {
+      "iso": "2026-10-01",
+      "text": "1 October 2026"
+    },
+    "due": {
+      "iso": "2026-10-31",
+      "text": "31 October 2026"
+    },
+    "validUntil": null,
+    "reference": "PO 5521",
+    "corrects": "",
+    "notes": "",
+    "seller": {
+      "name": "Fernhill Studio",
+      "legalName": "Fernhill Studio Ltd",
+      "tagline": "Brand design & illustration",
+      "address": [
+        "Unit 4, Paintworks",
+        "Bath Road",
+        "Bristol BS4 3EH",
+        "United Kingdom"
+      ],
+      "email": "hello@fernhill.example",
+      "phone": "+44 117 496 0321",
+      "website": "fernhill.example",
+      "registration": "Registered in England and Wales, company no. 12345678",
+      "taxLabel": "VAT",
+      "taxNumber": "GB 123 4567 89",
+      "logo": "/assets/logo.svg"
+    },
+    "brand": {
+      "color": "#2f5d50",
+      "accent": "#d9a441",
+      "font": "Inter"
+    },
+    "client": {
+      "id": "harbour-finch",
+      "name": "Harbour & Finch Coffee Ltd",
+      "contact": "Maya Okafor",
+      "email": "accounts@harbourfinch.example",
+      "address": [
+        "14 Narrow Quay",
+        "Bristol BS1 4QA",
+        "United Kingdom"
+      ],
+      "taxNumber": "GB 987 6543 21"
+    },
+    "showTax": true,
+    "showDiscount": false,
+    "items": [
+      {
+        "index": 0,
+        "description": "Brand identity: discovery workshop",
+        "details": "Half-day workshop with the founders, moodboards and a written brief",
+        "note": "",
+        "quantity": "1",
+        "unit": "day",
+        "unitPrice": "£650.00",
+        "discount": "",
+        "tax": "20%",
+        "net": "£650.00"
+      },
+      {
+        "index": 1,
+        "description": "Logo design",
+        "details": "Three concepts, two rounds of revisions, final files in SVG, PNG and PDF",
+        "note": "",
+        "quantity": "1",
+        "unit": "project",
+        "unitPrice": "£1,800.00",
+        "discount": "",
+        "tax": "20%",
+        "net": "£1,800.00"
+      },
+      {
+        "index": 2,
+        "description": "Packaging illustration",
+        "details": "Three bag fronts for the seasonal range",
+        "note": "",
+        "quantity": "3",
+        "unit": "design",
+        "unitPrice": "£380.00",
+        "discount": "",
+        "tax": "20%",
+        "net": "£1,140.00"
+      },
+      {
+        "index": 3,
+        "description": "Printed sample run",
+        "details": "Proofs from the printer, passed on at cost",
+        "note": "",
+        "quantity": "1",
+        "unit": "batch",
+        "unitPrice": "£96.40",
+        "discount": "",
+        "tax": "0%",
+        "net": "£96.40"
+      }
+    ],
+    "totals": {
+      "subtotal": "£3,686.40",
+      "taxes": [
+        {
+          "label": "VAT 20%",
+          "base": "£3,590.00",
+          "amount": "£718.00"
+        },
+        {
+          "label": "VAT 0%",
+          "base": "£96.40",
+          "amount": "£0.00"
+        }
+      ],
+      "total": "£4,404.40",
+      "raw": {
+        "subtotal": "3686.40",
+        "tax": "718.00",
+        "total": "4404.40"
+      }
+    },
+    "payment": {
+      "lines": [
+        "Bank transfer to Fernhill Studio Ltd",
+        "Sort code 00-00-00 · Account 00000000",
+        "IBAN GB00 XXXX 0000 0000 0000 00"
+      ],
+      "reference": "Please use INV-2026-041 as the payment reference."
+    },
+    "footer": "Thank you for working with us.",
+    "labels": {
+      "invoice": "Invoice",
+      "quote": "Quote",
+      "credit-note": "Credit note",
+      "number": "Number",
+      "issued": "Date",
+      "due": "Payment due",
+      "validUntil": "Valid until",
+      "reference": "Your reference",
+      "corrects": "Corrects invoice",
+      "billTo": "Bill to",
+      "preparedFor": "Prepared for",
+      "from": "From",
+      "description": "Description",
+      "quantity": "Qty",
+      "unitPrice": "Unit price",
+      "discount": "Discount",
+      "rate": "Tax",
+      "amount": "Amount",
+      "subtotal": "Subtotal",
+      "totalDue": "Total due",
+      "total": "Total",
+      "totalCredited": "Total credited",
+      "payment": "How to pay",
+      "notes": "Notes",
+      "taxNumber": "Tax no.",
+      "page": "Page {p} of {t}",
+      "continued": "Continued on the next page",
+      "acceptance": "To accept this quote, reply to this email or sign and return a copy.",
+      "taxOn": "on {base}",
+      "minimumApplied": "Minimum charge"
+    }
+  }
+}

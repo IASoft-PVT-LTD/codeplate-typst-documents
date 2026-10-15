@@ -1,6 +1,6 @@
 # Typst Invoices & Quotes
 
-> **Free CodePlate template, v1.1.4.** This repository mirrors the zip on [codeplate.io](https://codeplate.io/t/typst-documents/).
+> **Free CodePlate template, v1.1.5.** This repository mirrors the zip on [codeplate.io](https://codeplate.io/t/typst-documents/).
 > Press **Use this template** to start your own repository from it, or [download the zip](https://codeplate.io/t/typst-documents/).
 > [All templates](https://codeplate.io/) · [Free License](https://codeplate.io/license/free/) · subscribers get it under the [Pro License](https://codeplate.io/license/pro/) with no credit.
 
@@ -48,6 +48,10 @@ npm run remove-sample -- --yes  # take the sample business out
 ```
 
 There's nothing to `npm install`: the scripts use only what comes with Node. Keep `archive/` in your backups: it's the record of what you sent.
+
+## How this template was made
+
+This template was written largely by AI coding agents (Claude, by Anthropic). IASoft reviewed and tested the work. The template's checks run on every change. To test it, a fresh agent was given a made-up project and a set of change requests to carry out with the template. The record of that run is at [codeplate.io/t/typst-documents/eval/](https://codeplate.io/t/typst-documents/eval/).
 
 ## License
 

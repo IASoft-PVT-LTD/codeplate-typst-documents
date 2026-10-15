@@ -1,0 +1,4 @@
+{
+  "$comment": "The last number issued in each series (document type). npm run issue updates it; set it by hand only to continue from numbers sent before this project (docs/recipes/numbering.md). Never lower it.",
+  "invoice": "INV-2026-041"
+}

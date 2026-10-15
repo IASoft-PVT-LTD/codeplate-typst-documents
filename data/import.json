@@ -1,0 +1,21 @@
+{
+  "$comment": "How `npm run import -- <export.csv>` turns another program's export into documents (src/import.mjs, docs/recipes/import-a-spreadsheet.md). {Column} is a column of the export, {Column:date} its date in the client's language, [ ... ] is left out when a column inside is empty.",
+  "type": "invoice",
+  "dateFormat": "DD/MM/YYYY",
+  "dateColumn": "Date",
+  "decimalComma": false,
+  "issued": "end-of-month",
+  "id": "{Entry}",
+  "clients": { "Kranich Verlag": "kranich" },
+  "document": { "client": "{Client}", "currency": "{Currency}", "reference": "", "notes": "" },
+  "line": {
+    "description": "{Task}",
+    "details": "{Date:date}",
+    "quantity": "{Hours}",
+    "unit": "hour",
+    "unit_price": "{Rate}",
+    "discount": "",
+    "tax": "",
+    "line_note": ""
+  }
+}

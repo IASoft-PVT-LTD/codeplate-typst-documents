@@ -1,0 +1,16 @@
+[
+  {
+    "number": "QUO-2026-007",
+    "type": "quote",
+    "client": "harbour-finch",
+    "issued": "2026-10-08",
+    "reference": "Second café opening",
+    "notes": "Prices assume one round of revisions per item. Print and installation are quoted separately by the printer.",
+    "items": [
+      { "description": "Shopfront sign design", "details": "Fascia and projecting sign, with planning drawings", "quantity": "1", "unit": "design", "unitPrice": "720.00" },
+      { "description": "Menu board illustration", "quantity": "2", "unit": "board", "unitPrice": "340.00" },
+      { "description": "Opening-week flyer", "details": "A5, double-sided", "quantity": "1", "unit": "design", "unitPrice": "260.00", "discount": "15" },
+      { "description": "Copywriting: opening announcement", "quantity": "2.5", "unit": "hour", "unitPrice": "58.00" }
+    ]
+  }
+]

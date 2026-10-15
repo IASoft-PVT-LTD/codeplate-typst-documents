@@ -1,0 +1,5 @@
+id,name,contact,email,address,currency,tax_number,tax,language
+harbour-finch,Harbour & Finch Coffee Ltd,Maya Okafor,accounts@harbourfinch.example,"14 Narrow Quay|Bristol BS1 4QA|United Kingdom",,GB 987 6543 21,,
+lumen-books,Lumen Books Ltd,Tom Adeyemi,finance@lumenbooks.example,"3rd Floor, 22 Rathbone Place|London W1T 1HZ|United Kingdom",,,,
+tidewater,Tidewater Festival CLG,Aoife Brennan,hello@tidewaterfest.example,"7 Custom House Quay|Dublin D01 X2Y3|Ireland",EUR,IE 1234567T,zero,
+kranich,Kranich Verlag GmbH,Lena Vogt,buchhaltung@kranich-verlag.example,"Oranienstraße 25|10999 Berlin|Germany",EUR,DE 123456789,zero,de

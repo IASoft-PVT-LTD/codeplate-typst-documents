@@ -1,0 +1,50 @@
+{
+  "$schema": "https://codeplate.io/schema/assets-0.json",
+  "assets": [
+    {
+      "path": "assets/fonts/Inter-Regular.ttf",
+      "kind": "font",
+      "use": "Inter Regular: Body text. Swap the family with docs/recipes/change-fonts.md.",
+      "license": "OFL-1.1",
+      "licenseFile": "assets/fonts/OFL.txt",
+      "credit": "The Inter Project Authors (Rasmus Andersson)",
+      "source": "https://github.com/rsms/inter/releases/tag/v4.1"
+    },
+    {
+      "path": "assets/fonts/Inter-Italic.ttf",
+      "kind": "font",
+      "use": "Inter Italic: The \"continued\" note and any italic text. Swap the family with docs/recipes/change-fonts.md.",
+      "license": "OFL-1.1",
+      "licenseFile": "assets/fonts/OFL.txt",
+      "credit": "The Inter Project Authors (Rasmus Andersson)",
+      "source": "https://github.com/rsms/inter/releases/tag/v4.1"
+    },
+    {
+      "path": "assets/fonts/Inter-SemiBold.ttf",
+      "kind": "font",
+      "use": "Inter SemiBold: Names, labels and line amounts. Swap the family with docs/recipes/change-fonts.md.",
+      "license": "OFL-1.1",
+      "licenseFile": "assets/fonts/OFL.txt",
+      "credit": "The Inter Project Authors (Rasmus Andersson)",
+      "source": "https://github.com/rsms/inter/releases/tag/v4.1"
+    },
+    {
+      "path": "assets/fonts/Inter-Bold.ttf",
+      "kind": "font",
+      "use": "Inter Bold: The title and the total. Swap the family with docs/recipes/change-fonts.md.",
+      "license": "OFL-1.1",
+      "licenseFile": "assets/fonts/OFL.txt",
+      "credit": "The Inter Project Authors (Rasmus Andersson)",
+      "source": "https://github.com/rsms/inter/releases/tag/v4.1"
+    },
+    {
+      "path": "assets/logo.svg",
+      "kind": "image",
+      "width": 120,
+      "height": 120,
+      "use": "The sample business logo (Fernhill Studio), top left of every document; business.json \"logo\" points at it. Replace it with the user's logo (SVG best, or a PNG/JPEG at least 600 px wide).",
+      "license": "CodePlate-original",
+      "credit": "CodePlate"
+    }
+  ]
+}

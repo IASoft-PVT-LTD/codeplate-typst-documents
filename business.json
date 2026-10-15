@@ -1,0 +1,46 @@
+{
+  "name": "Fernhill Studio",
+  "legalName": "Fernhill Studio Ltd",
+  "tagline": "Brand design & illustration",
+  "address": ["Unit 4, Paintworks", "Bath Road", "Bristol BS4 3EH", "United Kingdom"],
+  "email": "hello@fernhill.example",
+  "phone": "+44 117 496 0321",
+  "website": "fernhill.example",
+  "registration": "Registered in England and Wales, company no. 12345678",
+  "logo": "assets/logo.svg",
+  "brand": { "color": "#2f5d50", "accent": "#d9a441", "font": "Inter" },
+  "language": "en",
+  "locale": "en-GB",
+  "currency": "GBP",
+  "languages": {
+    "de": {
+      "locale": "de-DE",
+      "tagline": "Markendesign & Illustration",
+      "taxLabel": "USt.",
+      "registration": "Eingetragen in England und Wales, Company No. 12345678",
+      "payment": {
+        "lines": ["Überweisung an Fernhill Studio Ltd", "IBAN GB00 XXXX 0000 0000 0000 00"],
+        "reference": "Bitte geben Sie {number} als Verwendungszweck an."
+      },
+      "footer": "Vielen Dank für die Zusammenarbeit."
+    }
+  },
+  "tax": {
+    "label": "VAT",
+    "number": "GB 123 4567 89",
+    "rates": { "standard": "20", "reduced": "5", "zero": "0" },
+    "default": "standard",
+    "rounding": "per-rate"
+  },
+  "lineMinimum": { "GBP": "50.00", "EUR": "60.00" },
+  "documents": {
+    "invoice": { "numbering": "INV-{yyyy}-{nnn}", "dueDays": 30, "gapless": true },
+    "credit-note": { "numbering": "CN-{yyyy}-{nnn}", "gapless": true },
+    "quote": { "numbering": "QUO-{yyyy}-{nnn}", "validDays": 30 }
+  },
+  "payment": {
+    "lines": ["Bank transfer to Fernhill Studio Ltd", "Sort code 00-00-00 · Account 00000000", "IBAN GB00 XXXX 0000 0000 0000 00"],
+    "reference": "Please use {number} as the payment reference."
+  },
+  "footer": "Thank you for working with us."
+}

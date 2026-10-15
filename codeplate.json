@@ -3,7 +3,7 @@
   "spec": 0,
   "id": "typst-documents",
   "name": "Typst Invoices & Quotes",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "kind": "document",
   "summary": "Branded PDF invoices, quotes and credit notes from CSV or JSON, typeset with Typst: exact money math, imports, frozen sent invoices, checks.",
   "tags": [

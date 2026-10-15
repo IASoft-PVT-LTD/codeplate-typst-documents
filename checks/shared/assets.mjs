@@ -6,6 +6,8 @@
 //   - an SVG has an element with every id in `groups`
 //   - a WAV's sample rate, channels and duration match
 //   - fonts under OFL-1.1 name a licenseFile that exists
+//   - `CodePlate-original` files credit CodePlate; files the user supplied (their logo,
+//     photos, symbols) are `user-owned` and credit the user, not CodePlate
 //   - a fetched file's SHA-256 matches fetch.sha256
 //
 //   import { checkAssets } from './shared/assets.mjs';
@@ -21,8 +23,11 @@ import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const FETCHED_DIR = 'assets/fetched/';
-const SHIPPED_LICENSES = ['CodePlate-original', 'CC0-1.0', 'OFL-1.1'];
-const FETCHED_LICENSES = ['CodePlate-original', 'CC0-1.0', 'OFL-1.1', 'MIT', 'Apache-2.0'];
+// `user-owned` is for files the user adds to their project. A template never ships one
+// (CodePlate's validator refuses it), but a project made from it may.
+const SHIPPED_LICENSES = ['CodePlate-original', 'CC0-1.0', 'OFL-1.1', 'user-owned'];
+const FETCHED_LICENSES = ['CodePlate-original', 'CC0-1.0', 'OFL-1.1', 'MIT', 'Apache-2.0', 'user-owned'];
+const byCodePlate = (credit) => /^codeplate\b/i.test(String(credit ?? '').trim());
 
 export function pngSize(buf) {
   const sig = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a];
@@ -99,6 +104,11 @@ export function checkAssets(dir = '.', { requireFetched = true } = {}) {
       fail(p, `license "${a.license}" is not allowed for a ${fetched ? 'fetched' : 'shipped'} file (${(fetched ? FETCHED_LICENSES : SHIPPED_LICENSES).join(', ')})`);
     }
     if (a.license === 'OFL-1.1' && a.kind !== 'font' && !fetched) fail(p, 'only fonts may ship under OFL-1.1');
+    if (a.license === 'CodePlate-original' && !byCodePlate(a.credit)) {
+      fail(p, `"CodePlate-original" files are credited to CodePlate, not "${a.credit ?? ''}": a file the user gave you is "license": "user-owned" with their name as "credit"`);
+    }
+    if (a.license === 'user-owned' && !String(a.credit ?? '').trim()) fail(p, '"user-owned" files need "credit": the name of the person or company who owns it');
+    else if (a.license === 'user-owned' && byCodePlate(a.credit)) fail(p, `"user-owned" files are credited to their owner, not CodePlate: CodePlate's own files are "CodePlate-original"`);
     if (a.platform && !fetched) fail(p, '"platform" is only for fetched files');
     if (a.licenseFile) {
       licenseFiles.add(a.licenseFile);
